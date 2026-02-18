@@ -1,57 +1,75 @@
-.container {
+.navbar {
+    background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 20px;
+    position: relative;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #fda085;
+}
+
+.hero {
+    background: linear-gradient(135deg, #ffafbd 0%, #ffc3a0 100%);
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: white;
+}
+
+.featured-games {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.game-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    overflow: hidden;
+}
+
+.game-card:hover {
+    transform: scale(1.05);
+}
+
+.features-section {
+    background: #f9f9f9;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.payment-methods {
+    display: flex;
     justify-content: center;
     padding: 20px;
 }
 
-.card {
-    background: linear-gradient(145deg, #ffffff, #e6e6e6);
-    border-radius: 20px;
-    box-shadow: 5px 5px 15px #d1d1d1, -5px -5px 15px #ffffff;
-    margin: 15px;
-    padding: 20px;
-    width: 300px;
-    transition: transform 0.3s, box-shadow 0.3s;
+.payment-methods img {
+    width: 50px;
+    margin: 0 10px;
 }
 
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 10px 10px 25px #d1d1d1, -10px -10px 25px #ffffff;
-}
-
-.card h3 {
-    margin: 0;
-    color: #333;
-}
-
-.card p {
-    color: #666;
-}
-
-.button {
-    background: linear-gradient(145deg, #ff758c, #ff7eb3);
-    border: none;
-    border-radius: 10px;
+.footer {
+    background: #333;
     color: white;
-    cursor: pointer;
-    margin-top: 10px;
-    padding: 10px 20px;
-    transition: background 0.3s;
-}
-
-.button:hover {
-    background: linear-gradient(145deg, #ff7eb3, #ff758c);
-}
-
-@media (max-width: 768px) {
-    .card {
-        width: calc(50% - 30px);
-    }
-}
-
-@media (max-width: 480px) {
-    .card {
-        width: 100%;
-    }
+    text-align: center;
+    padding: 10px;
 }
