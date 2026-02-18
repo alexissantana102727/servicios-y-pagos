@@ -3,34 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game Recharge Store</title>
+    <title>Servicios y Pagos</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to the Game Recharge Store</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#payment-methods">Payment Methods</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    <main>
-        <section class="products">
-            <div class="product">
-                <h2>Recharge Option 1</h2>
-                <p>Description of recharge option 1.</p>
-                <button>Recharge Now</button>
-            </div>
-            <div class="product">
-                <h2>Recharge Option 2</h2>
-                <p>Description of recharge option 2.</p>
-                <button>Recharge Now</button>
-            </div>
-            <div class="product">
-                <h2>Recharge Option 3</h2>
-                <p>Description of recharge option 3.</p>
-                <button>Recharge Now</button>
-            </div>
-        </section>
-    </main>
+
+    <section id="hero">
+        <h1>Welcome to Servicios y Pagos</h1>
+        <p>Your favorite games in one place!</p>
+    </section>
+
+    <section id="products">
+        <h2>Our Products</h2>
+        <div class="card-container">
+            <div class="card"><h3>Valorant</h3><p>Purchase Valorant goodies</p></div>
+            <div class="card"><h3>Free Fire</h3><p>Get your Free Fire items</p></div>
+            <div class="card"><h3>Roblox</h3><p>Roblox credits available</p></div>
+            <div class="card"><h3>Fortnite</h3><p>Buy Fortnite skins</p></div>
+            <div class="card"><h3>Minecraft</h3><p>Minecraft resources available</p></div>
+            <div class="card"><h3>PUBG Mobile</h3><p>PUBG accessories for more fun</p></div>
+        </div>
+    </section>
+
+    <section id="features">
+        <h2>Features</h2>
+        <ul>
+            <li>User-friendly interface</li>
+            <li>Secure payments</li>
+            <li>24/7 customer support</li>
+        </ul>
+    </section>
+
+    <section id="payment-methods">
+        <h2>Payment Methods</h2>
+        <ul>
+            <li>Credit Card</li>
+            <li>PayPal</li>
+            <li>Bank Transfer</li>
+        </ul>
+    </section>
+
     <footer>
-        <p>&copy; 2026 Game Recharge Store</p>
+        <p>&copy; 2026 Servicios y Pagos. All rights reserved.</p>
     </footer>
+
+    <div id="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Purchase Confirmation</h2>
+            <p>Your purchase was successful!</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
